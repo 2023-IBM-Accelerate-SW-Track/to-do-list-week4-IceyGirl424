@@ -12,6 +12,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^14.4.3",
+    "axios": "^1.4.0",
     "bootstrap": "^5.3.0",
     "cors": "^2.8.5",
     "date-fns": "^2.30.0",
@@ -30,7 +31,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --watchAll=false --detectOpenHandles",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "install-backend": "cd backend && npm install",
+    "install-both": "npm install & npm run install-backend",
+    "backend": "cd backend && node index.js",
+    "start-both": "npm run backend & npm start"
   },
   "eslintConfig": {
     "extends": [
